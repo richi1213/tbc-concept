@@ -1,39 +1,41 @@
-TBC Concept
-Description
+# TBC Concept
+
+## Description
 
 This project is a web application built using HTML, TailwindCSS, and JavaScript. It includes various interactive components such as a dropdown menu, hamburger menu, slider, dropdown accordion, and more.
-Installation
 
-    Download the source code or clone the repository.
-    Open the index.html file located at src/index.html in VS Code.
+## Installation
 
-Key Files and Directories
+1. Download the source code or clone the repository.
+2. Open the `index.html` file located at `src/index.html` in VS Code.
 
-    index.html: Main HTML file containing the structure of the web page.
-    src/styles/: Directory containing CSS files, including Tailwind CSS for styling.
-    src/scripts/: Directory containing JavaScript files.
+### Key Files and Directories
 
-    Run the installation command:
+- `index.html`: Main HTML file containing the structure of the web page.
+- `src/styles/`: Directory containing CSS files, including Tailwind CSS for styling.
+- `src/scripts/`: Directory containing JavaScript files.
 
-Bash
+3. Run the installation command:
 
-npm install
+    ```bash
+    npm install
+    ```
 
-Use code with caution.
+    *Use code with caution.*
 
-    Run the development server:
+4. Run the development server:
 
-Bash
+    ```bash
+    npm run build  # This might need to be replaced with the correct build command (see below)
+    ```
 
-npm run build  # This might need to be replaced with the correct build command (see below)
+    *Use code with caution.*
 
-Use code with caution.
+5. Install the Live Server VS Code extension by Ritwick Dey.
+6. After installing it, click on "Go Live" in the bottom right corner.
 
-    Install the Live Server VS Code extension by Ritwick Dey.
-    After installing it, click on "Go Live" in the bottom right corner.
-
-Documentation
+## Documentation
 
 For detailed documentation on Tailwind CSS, refer to their official documentation website:
 
-https://tailwindcss.com/
+[https://tailwindcss.com/](https://tailwindcss.com/)
