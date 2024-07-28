@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>თიბისი კონცეპტი | TBC Concept</title>
+    <link rel="icon" href="images/tbc.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <script src="./scripts/dropdown-menu.js" defer></script>
+    <script src="./scripts/hamburger.js" defer></script>
+    <script src="./scripts/slider.js" defer></script>
+    <script src="./scripts/dropdown-accordion.js" defer></script>
+    <script src="./scripts/menu-button.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+  </head>
+  <body
+    class="text-slate-900 h-screen bg-gray-100 mt leading-relaxed font-tbcx"
+  >
+    <div id="b-wrapper">
+      <header
+        class="bg-white top-0 mx-auto px-5 py-3 border-b-2 border-slate-200 z-[100] text-sm fixed w-full"
+      >
+        <nav
+          class="flex items-center mx-auto justify-between md:gap-[32px] gap-[4vw] sm:w-[85%]"
+        >
+          <div class="text-gray-600 hidden md:block">
+            <a href="#">
+              <svg
+                data-v-562b0aec=""
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                class="sm:w-44 sm:h-auto w-48 h-auto p-3"
+                viewbox="0 0 165 32"
+                fill="currentColor"
+              >
+                <path
+                  data-v-562b0aec=""
+                  d="M13.92,5.92c.11.06.26.23.29.26,1.47,1.7,4.2,6.2,5.31,8.09,1.39,2.36,4.58,8.29,4.85,9.07.03.08,0,.18-.07.23-.08.05-.17.09-.4-.15-1.24-1.25-4.11-3.68-8.84-5.6-.25-.1-.47-.19-.68-.28-.66-.33-1.03-.82-1.21-1.5-.53-2.01-.91-5.76-.39-9,.02-.11.08-.5.21-.8.21-.45.6-.5.92-.32ZM12.14,5.48c.09.04.16.1.07.41-.47,1.7-1.14,5.39-.45,10.44.04.26.07.5.09.73.04.74-.2,1.3-.69,1.79-1.48,1.46-4.54,3.66-7.61,4.83-.11.04-.47.18-.8.21-.5.05-.74-.26-.74-.63,0-.13.07-.34.08-.38.74-2.12,3.29-6.73,4.37-8.63,1.35-2.38,4.91-8.1,5.45-8.73.05-.07.15-.1.23-.06ZM14.62,19.18c2.01.55,5.45,2.09,8,4.16.09.07.39.32.58.58.29.41.14.77-.18.95-.11.06-.33.11-.37.12-2.21.42-7.48.53-9.67.54-2.74.02-9.49-.19-10.3-.34-.09-.01-.16-.08-.17-.17,0-.1,0-.19.32-.27,1.71-.45,5.25-1.71,9.28-4.84.21-.16.4-.31.58-.44.62-.41,1.23-.48,1.9-.3Z"
+                  class="cls-2"
+                ></path>
+
+                <path
+                  data-v-562b0aec=""
+                  d="M81.72,12.35c-1.84,0-3.11,1.39-3.11,3.09s1.15,3.09,3.11,3.09,3.1-1.39,3.1-3.09-1.26-3.09-3.1-3.09ZM68.36,9.65c2.85,0,4.6,2.21,4.6,5.38h0c0,2.48-.88,4.38-2.47,5.91l-1.94-1.63c.9-1.01,1.71-2.58,1.71-4.27,0-1.81-.91-2.92-2.24-2.92s-2.27.86-2.27,2.67v2.57h-2.71v-2.57c0-1.81-.94-2.67-2.27-2.67s-2.24,1.11-2.24,2.92v.16c.05,1.64.83,3.14,1.71,4.12l-1.94,1.63c-1.59-1.53-2.47-3.42-2.47-5.9h0s0-.14,0-.14c.05-3.1,1.78-5.24,4.6-5.24,1.99,0,3.4.9,3.96,2.25.57-1.35,1.97-2.25,3.96-2.25ZM152.31,9.65c3.48,0,5.68,2.6,5.68,5.72,0,2.34-.77,4.13-2.16,5.57l-1.95-1.61c1.09-1.4,1.41-2.67,1.41-3.95,0-1.83-1.02-3.27-2.97-3.27s-2.97,1.44-2.97,3.27c0,1.28.31,2.55,1.41,3.95l-1.95,1.61c-1.39-1.44-2.16-3.23-2.16-5.57,0-3.11,2.2-5.72,5.68-5.72ZM124.49,5.33v.12c0,1.21,3.11,1.73,3.11,4.12,0,1.18-.93,2-2.04,2.25,1.9.61,3.08,2.11,3.08,4.27,0,2.87-2.15,4.97-5.7,4.97-2.57,0-4.77-1.44-5.34-3.91l2.44-1.01c.39,1.49,1.5,2.45,2.9,2.45,1.97,0,2.97-1.15,2.97-2.55,0-1.64-1.15-2.68-2.97-2.68h-1.67v-2.45h1.52c1.31,0,2.08-.49,2.08-1.33,0-1.54-3.11-1.58-3.11-4.06v-.18h2.73ZM86.32,5.41v2.45h-6.62c-.99,0-1.33.59-1.33,1.33v2.1c.78-1.19,2.48-1.55,3.64-1.55,3.5,0,5.52,2.52,5.52,5.7s-2.18,5.7-5.81,5.7-6.05-2.43-6.05-6.2v-5.67c0-2.13,1.44-3.86,3.88-3.86h6.78ZM136.74,14.33c-2.26.48-3.15,2.49-3.2,4.38.06,2.17,1.21,4.49,4.27,4.49s4.21-2.32,4.27-4.49c-.05-1.86-.9-3.82-3.07-4.35.07.39.21,1.28.21,1.99v1.19h-2.71v-1.19c0-.72.15-1.65.22-2.02ZM139.23,9.94v.57c0,.42-.05.92-.11,1.33,3.88.56,5.69,3.65,5.69,6.87,0,3.56-2.22,6.96-7,6.96s-7-3.4-7-6.96c0-3.25,1.85-6.37,5.81-6.88-.06-.41-.11-.89-.11-1.31v-.57h2.71ZM100.78,9.94v.12c0,1.49,1.15,1.84,1.15,3.41,0,1.49-.97,2.24-2.37,2.52,2.02.55,3.08,1.93,3.08,4.21,0,3.04-2.2,5.46-6,5.46s-5.98-2.55-5.98-5.68v-10.05h2.71v10.05c0,1.65,1.1,3.2,3.27,3.2s3.27-1.45,3.27-3.05c0-1.78-1.15-2.93-2.97-2.93h-.46v-2.45h1.04c1.04,0,1.67-.55,1.67-1.39,0-1.22-1.15-1.44-1.15-3.26v-.18h2.73ZM110.29,9.65c3.31,0,5.35,1.92,5.35,5.35v5.39c0,3.05-2.1,5.28-5.47,5.28-3.02,0-5.13-1.65-5.47-4.69l2.48-.69c.22,1.93,1.31,2.91,2.85,2.91,2.04,0,2.88-1.26,2.88-2.86v-5.31c0-1.66-.89-2.92-2.62-2.92s-2.64,1.26-2.64,2.92v.97h-2.71v-.99c0-3.42,2.03-5.35,5.35-5.35ZM52.59,9.94v2.38c0,1.67-.69,2.85-1.98,3.5,1.93.71,3.08,2.3,3.08,4.58,0,3.05-2.15,5.28-5.7,5.28-2.57,0-4.77-1.44-5.34-3.91l2.44-1.01c.39,1.49,1.5,2.45,2.9,2.45,1.97,0,2.97-1.26,2.97-2.86,0-1.78-1.15-2.99-2.97-2.99h-1.79v-2.45h1.18c1.69,0,2.48-.99,2.48-2.38v-2.57h2.73Z"
+                  class="cls-2"
+                ></path>
+                <rect
+                  data-v-562b0aec=""
+                  x="33.06"
+                  y=".84"
+                  width=".99"
+                  height="29.32"
+                  class="cls-1"
+                ></rect>
+              </svg>
+            </a>
+          </div>
+
+          <div class="text-gray-600 md:hidden block">
+            <a href="#">
+              <div class="svg-container">
+                <svg
+                  data-v-562b0aec=""
+                  class="w-9 h-8"
+                  viewbox="0 0 36 32"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    data-v-562b0aec=""
+                    d="M15.8154 18.4806C15.8263 18.5838 15.8325 18.7025 15.8325 18.8227C15.8325 19.8184 15.4065 20.7155 14.7261 21.3474L14.7246 21.349C11.2681 24.5334 7.20468 27.1305 2.73238 28.9447L2.4671 29.0402C2.09727 29.1913 1.66502 29.3099 1.21717 29.3747L1.18752 29.3778C1.1251 29.3916 1.05332 29.3993 0.979974 29.3993C0.438492 29.3993 0 28.9662 0 28.4314C0 28.4114 0 28.3898 0.00156047 28.3697V28.3728C0.0187256 28.154 0.0639792 27.949 0.13264 27.7578L0.127958 27.7748C1.32952 24.3946 5.39922 17.0533 7.15475 14.0277C9.33784 10.2375 15.0632 1.11901 15.9168 0.118682C15.973 0.0462399 16.0588 0 16.1571 0C16.2055 0 16.2523 0.0107893 16.2929 0.0323679L16.2913 0.0308266C16.4333 0.0986452 16.5503 0.186501 16.4068 0.692058C15.6577 3.39401 14.5717 9.27881 15.6952 17.3246C15.7529 17.7407 15.8169 18.1214 15.8169 18.4806H15.8154Z"
+                  ></path>
+                  <path
+                    data-v-562b0aec=""
+                    d="M17.2182 22.3447C17.78 21.9501 18.4807 21.7143 19.2375 21.7143C19.6104 21.7143 19.9693 21.7713 20.3064 21.8776L20.2814 21.8715C25.2172 23.3851 29.5022 25.6493 33.2443 28.5639L33.16 28.5007C33.5126 28.7751 33.8216 29.0787 34.09 29.4163L34.0994 29.4271C34.257 29.5997 34.3537 29.8278 34.3537 30.0791C34.3537 30.4552 34.1368 30.7819 33.8201 30.9438L33.8138 30.9468C33.6437 31.0285 33.4455 31.0948 33.238 31.1318L33.224 31.1333C29.6661 31.7992 21.1771 31.9718 17.6567 31.998C13.2437 32.0289 2.39535 31.6913 1.08143 31.4771C0.939428 31.457 0.828635 31.343 0.817711 31.2027V31.2012C0.817711 31.0455 0.817711 30.9037 1.34515 30.7742C4.09157 30.0606 9.77948 28.0461 16.2851 23.0676C16.6175 22.787 16.9171 22.5466 17.2182 22.3431V22.3447Z"
+                  ></path>
+                  <path
+                    data-v-562b0aec=""
+                    d="M19.9178 19.2296C18.9394 18.7734 18.22 17.9134 17.9719 16.873L17.9672 16.8498C17.3212 14.1987 16.9514 11.1562 16.9514 8.02726C16.9514 6.0821 17.0949 4.17085 17.3711 2.30275L17.3446 2.51546C17.4117 2.04381 17.5319 1.61686 17.7004 1.21612L17.6879 1.25002C17.819 0.853902 18.1904 0.571839 18.6273 0.571839C18.827 0.571839 19.0127 0.630409 19.1672 0.730596L19.1641 0.729055C19.3373 0.85082 19.4871 0.986457 19.6198 1.13751L19.6229 1.14059C21.9854 3.85333 26.3813 11.0344 28.1633 14.023C30.3932 17.7823 35.5443 27.2338 35.9766 28.473C35.9906 28.5069 36 28.547 36 28.5886C36 28.6919 35.9469 28.7828 35.8674 28.8383H35.8658C35.7347 28.9262 35.6021 28.9786 35.2338 28.6086C33.2146 26.6188 28.6174 22.7454 21.0055 19.6828C20.6044 19.5271 20.2471 19.3853 19.9194 19.2296H19.9178Z"
+                  ></path>
+                </svg>
+              </div>
+            </a>
+          </div>
+
+          <nav
+            class="nav-header h-full lg:flex items-center justify-between gap-5 flex-1 hidden text-base"
+          >
+            <div class="nav-dropdown h-full">
+              <div
+                class="header-dropdown-toggler cursor-pointer h-full flex items-center relative"
+              >
+                <div>პროდუქტები</div>
+                <div
+                  class="header-dropdown-indicator transform scale-x-0 absolute left-0 bottom-[-30px] w-full h-[2px] transition-transform duration-1000 bg-blue-800"
+                ></div>
+              </div>
+              <div
+                class="dropdown-list hidden min-h-[192px] min-w-[200px] top-[100px] invisible lg:flex flex-col items-start transition-all duration-600 absolute mt-2 z-[102] gap-5 font-medium text-sm"
+              >
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  პროდუქტების მიმოხილვა
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  ნაკრები
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  პირადი ბანკირი
+                </a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown h-full">
+              <div
+                class="header-dropdown-toggler cursor-pointer h-full flex items-center relative"
+              >
+                <div>შეთავაზებები</div>
+                <div
+                  class="header-dropdown-indicator transform scale-x-0 absolute left-0 bottom-[-30px] w-full h-[2px] transition-transform duration-1000 bg-blue-800"
+                ></div>
+              </div>
+              <div
+                class="dropdown-list hidden min-h-[192px] min-w-[200px] top-[100px] invisible lg:flex flex-col items-start transition-all duration-600 absolute mt-2 z-[102] gap-5 font-medium text-sm"
+              >
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  მიმოხილვა
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  შეთავაზებები
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  ღონისძიებები
+                </a>
+              </div>
+            </div>
+
+            <div class="nav-dropdown h-full">
+              <div
+                class="header-dropdown-toggler cursor-pointer h-full flex items-center relative"
+              >
+                <div class="whitespace-nowrap">კონცეპტის სივრცე</div>
+                <div
+                  class="header-dropdown-indicator transform scale-x-0 absolute left-0 bottom-[-30px] w-full h-[2px] transition-transform duration-1000 bg-blue-800"
+                ></div>
+              </div>
+              <div
+                class="dropdown-list hidden min-h-[192px] min-w-[200px] top-[100px] invisible lg:flex flex-col items-start transition-all duration-600 absolute mt-2 z-[102] gap-5 font-medium text-sm"
+              >
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  მიმოხილვა
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  კაფე
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  ბიბლიოთეკა
+                </a>
+                <a
+                  href="#"
+                  class="dropdown-link no-underline hover:text-blue-600 transition ease-in-out duration-300"
+                >
+                  კონცეპტ ფილიალები
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <div>
+            <ul class="flex items-center md:gap-[2vw] gap-[1vw]">
+              <li>
+                <div
+                  class="hover:hover:text-cyan-600 cursor-pointer text-gray-600"
+                >
+                  <span class="material-symbols-outlined"> search </span>
+                </div>
+              </li>
+              <li>
+                <button
+                  class="text-blue-700 hover:text-cyan-600 font-bold flex items-center justify-center whitespace-nowrap transition ease-in-out duration-700"
+                >
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                  <span class="text-md font-bold">გამოიწერეთ ნაკრები</span>
+                </button>
+              </li>
+              <li class="hidden md:block">
+                <div
+                  class="lang-dropdown cursor-pointer relative inline-block group"
+                >
+                  <div
+                    class="cur-lang flex items-center hover:bg-gray-100 p-2 rounded-md"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="#4b5563"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.6654 7.99992C14.6654 4.32659 11.672 1.33325 7.9987 1.33325C4.32536 1.33325 1.33203 4.32659 1.33203 7.99992C1.33203 11.6733 4.32536 14.6666 7.9987 14.6666C11.672 14.6666 14.6654 11.6733 14.6654 7.99992ZM13.2854 7.33325H11.3187C11.2587 5.83325 10.972 4.37325 10.4587 3.26659C11.9787 4.05992 13.072 5.55992 13.292 7.33325H13.2854ZM7.9987 13.3333C6.9787 13.3333 6.1387 11.2999 6.0187 8.66659H9.98536C9.86536 11.2999 9.02536 13.3333 8.00536 13.3333H7.9987ZM6.0187 7.33325C6.1387 4.69992 6.9787 2.66659 7.9987 2.66659C9.0187 2.66659 9.8587 4.69992 9.9787 7.33325H6.01203H6.0187ZM5.54536 3.26659C5.02536 4.37325 4.74536 5.82659 4.68536 7.33325H2.7187C2.9387 5.55992 4.03203 4.05992 5.55203 3.26659H5.54536ZM2.71203 8.66659H4.6787C4.7387 10.1666 5.02536 11.6266 5.5387 12.7333C4.0187 11.9399 2.92536 10.4399 2.70536 8.66659H2.71203ZM10.452 12.7333C10.972 11.6266 11.252 10.1733 11.312 8.66659H13.2787C13.0587 10.4399 11.9654 11.9399 10.4454 12.7333H10.452Z"
+                      ></path>
+                    </svg>
+                    <div>ქარ</div>
+                  </div>
+                  <div
+                    class="other-lang absolute left-0 top-[40px] bg-white border border-gray-300 font-medium rounded-md transition-opacity duration-600 ease-in-out opacity-0 group-hover:opacity-100 group-hover:block z-30"
+                  >
+                    <div class="py-2">
+                      <div
+                        class="hover:bg-gray-100 bg-white w-full py-1.5 px-3.5"
+                      >
+                        Eng
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="hamburger">
+                  <span class="bar bar-1"></span>
+                  <span class="bar bar-2"></span>
+                  <span class="bar bar-3"></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div
+          class="nav-header-dropdown-theme transition-opacity duration-600 opacity-0 hidden z-[101] absolute top-[79px] left-0 w-full px-12 pt-7 pb-9 bg-gray-50"
+        >
+          <div>
+            <a href="#" class="block max-w-[190px] max-h-[130px] mb-[20px]">
+              <div class="w-full h-full">
+                <img
+                  src="/src/images/pl-card.png"
+                  alt="plastic cards"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div
+                class="flex items-center text-blue-700 hover:text-cyan-600 transition ease-in-out duration-700"
+              >
+                <span class="material-symbols-outlined">north_east</span>
+                <div
+                  class="uppercase text-base transition-all duration-[0.25s] text-sm font-bold"
+                >
+                  ციფრული ბანკი
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu-header mt-[56px]">
+        <div class="footer-main text-slate-600 md:px-8 px-0">
+          <div class="footer-main-container">
+            <div class="flex md:flex-row flex-col md:gap-[7vw] gap-0">
+              <!-- first -->
+
+              <div
+                class="footer-main-col flex flex-col md:border-0 border-t border-t-gray-200 py-2"
+              >
+                <div
+                  class="flex justify-between items-center flex-wrap md:gap-[3vw] gap-0 space-y-2 py-5 pl-4"
+                >
+                  <a href="#" class="block font-bold text-slate-900 flex-none"
+                    >პროდუქტები</a
+                  >
+
+                  <div class="md:hidden flex-none pr-5">
+                    <button class="accordion-toggle" data-target="#dropdown1">
+                      <span class="material-symbols-outlined text-gray-500"
+                        >keyboard_arrow_down</span
+                      >
+                    </button>
+                  </div>
+
+                  <div
+                    id="dropdown1"
+                    class="dropdown-items flex flex-col space-y-3 w-full md:max-h-none md:overflow-visible my-1 md:my-0"
+                  >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >პროდუქტების მიმოხილვა</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >ნაკრები</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >პირადი ბანკირი</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- second -->
+              <div
+                class="footer-main-col flex flex-col md:border-0 border-t border-t-gray-200"
+              >
+                <div
+                  class="flex justify-between items-center flex-wrap md:gap-[3vw] gap-0 space-y-2 py-5 pl-4"
+                >
+                  <a href="#" class="block font-bold text-slate-900 flex-none"
+                    >შეთავაზებები</a
+                  >
+
+                  <div class="md:hidden flex-none pr-5">
+                    <button class="accordion-toggle" data-target="#dropdown2">
+                      <span class="material-symbols-outlined text-gray-500"
+                        >keyboard_arrow_down</span
+                      >
+                    </button>
+                  </div>
+
+                  <div
+                    id="dropdown2"
+                    class="dropdown-items flex flex-col space-y-3 w-full md:max-h-none md:overflow-visible my-1 md:my-0"
+                  >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >მიმოხილვა</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >შეთავაზებები</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >ღონისძიებები</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- third -->
+              <div
+                class="footer-main-col flex flex-col md:border-0 border-t border-t-gray-200 pr-5"
+              >
+                <div
+                  class="flex justify-between items-center flex-wrap md:gap-[3vw] gap-0 space-y-2 py-5 pl-4"
+                >
+                  <a href="#" class="block font-bold text-slate-900 flex-none"
+                    >კონცეპტის სივრცე</a
+                  >
+
+                  <div class="md:hidden flex-none">
+                    <button class="accordion-toggle" data-target="#dropdown3">
+                      <span class="material-symbols-outlined text-gray-500"
+                        >keyboard_arrow_down</span
+                      >
+                    </button>
+                  </div>
+
+                  <div
+                    id="dropdown3"
+                    class="dropdown-items flex flex-col space-y-3 w-full md:max-h-none md:overflow-visible my-1 md:my-0"
+                  >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >მიმოხილვა</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >კაფე</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >ბიბლიოთეკა</a
+                    >
+                    <a
+                      href="#"
+                      class="block hover:text-blue-700 ease-in-out duration-700"
+                      >კონცეპტ ფილიალები</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- fourth -->
+              <div
+                class="footer-main-col flex flex-col md:gap-[3vw] gap-[7vw] font-medium md:border-0 border-t border-t-gray-200 py-5 md:pl-0 pl-4"
+              >
+                <div>
+                  <p class="font-bold text-slate-900 cursor-pointer">
+                    დაგვიკავშირდით:
+                  </p>
+                </div>
+                <div class="flex items-center gap-[0.5vw] cursor-pointer">
+                  <span class="material-symbols-outlined"> call </span>
+                  <a href="#" class="hover:underline">+995 32 2 27 27 00</a>
+                </div>
+                <div class="flex items-center gap-[0.5vw] cursor-pointer">
+                  <span class="material-symbols-outlined"> mail </span>
+                  <a href="#" class="hover:underline">info@tbcconcept.ge</a>
+                </div>
+                <div class="flex items-center gap-[0.5vw] cursor-pointer">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <a href="#" class="hover:underline">ფილიალები</a>
+                </div>
+                <div>
+                  <div>
+                    <p class="font-bold text-slate-900 mb-3.5">
+                      სოციალური ქსელები
+                    </p>
+                    <div class="flex items-center md:gap-[0.5vw] gap-[4vw]">
+                      <div
+                        class="bg-gray-100 p-2.5 rounded-md hover:bg-gray-200 hover:text-blue-700"
+                      >
+                        <a
+                          data-v-174d8ed1=""
+                          href="https://www.facebook.com/tbcconcept"
+                          target="_self"
+                          class="footer_social-link w-inline-block"
+                          ><div data-v-174d8ed1="" class="icon w-embed">
+                            <svg
+                              width="17"
+                              height="16"
+                              viewBox="0 0 17 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g clip-path="url(#clip0_167_7547)">
+                                <path
+                                  d="M9.83464 9.00163H11.5013L12.168 6.33496H9.83464V5.00163C9.83464 4.31496 9.83464 3.66829 11.168 3.66829H12.168V1.42829C11.9506 1.39963 11.13 1.33496 10.2633 1.33496C8.4533 1.33496 7.16797 2.43963 7.16797 4.46829V6.33496H5.16797V9.00163H7.16797V14.6683H9.83464V9.00163Z"
+                                ></path>
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_167_7547">
+                                  <rect
+                                    width="16"
+                                    height="16"
+                                    fill="white"
+                                    transform="translate(0.5 0.000976562)"
+                                  ></rect>
+                                </clipPath>
+                              </defs>
+                            </svg></div
+                        ></a>
+                      </div>
+                      <div
+                        class="bg-gray-100 p-2.5 rounded-md hover:bg-gray-200 hover:text-blue-700"
+                      >
+                        <a
+                          data-v-174d8ed1=""
+                          href="https://www.instagram.com/tbc_concept/"
+                          target="_self"
+                          class="footer_social-link w-inline-block"
+                          ><div data-v-174d8ed1="" class="icon w-embed">
+                            <svg
+                              width="17"
+                              height="16"
+                              viewBox="0 0 17 16"
+                              fill="currentColor"
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="bi bi-instagram"
+                            >
+                              <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                              ></path>
+                            </svg></div
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom sm:text-xs text-sm p-6 bg-gray-50 border-t border-t-gray-200"
+        >
+          <div
+            class="flex justify-between md:flex-row flex-col md:items-center items-start gap-[5vw]"
+          >
+            <div
+              class="flex items-center justify-between md:order-1 order-2 gap-[3vw]"
+            >
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="21"
+                height="32"
+                viewBox="0 0 36 32"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#6F787B"
+              >
+                <path
+                  d="M15.8154 18.4806C15.8263 18.5838 15.8325 18.7025 15.8325 18.8227C15.8325 19.8184 15.4065 20.7155 14.7261 21.3474L14.7246 21.349C11.2681 24.5334 7.20468 27.1305 2.73238 28.9447L2.4671 29.0402C2.09727 29.1913 1.66502 29.3099 1.21717 29.3747L1.18752 29.3778C1.1251 29.3916 1.05332 29.3993 0.979974 29.3993C0.438492 29.3993 0 28.9662 0 28.4314C0 28.4114 0 28.3898 0.00156047 28.3697V28.3728C0.0187256 28.154 0.0639792 27.949 0.13264 27.7578L0.127958 27.7748C1.32952 24.3946 5.39922 17.0533 7.15475 14.0277C9.33784 10.2375 15.0632 1.11901 15.9168 0.118682C15.973 0.0462399 16.0588 0 16.1571 0C16.2055 0 16.2523 0.0107893 16.2929 0.0323679L16.2913 0.0308266C16.4333 0.0986452 16.5503 0.186501 16.4068 0.692058C15.6577 3.39401 14.5717 9.27881 15.6952 17.3246C15.7529 17.7407 15.8169 18.1214 15.8169 18.4806H15.8154Z"
+                ></path>
+                <path
+                  d="M17.2182 22.3447C17.78 21.9501 18.4807 21.7143 19.2375 21.7143C19.6104 21.7143 19.9693 21.7713 20.3064 21.8776L20.2814 21.8715C25.2172 23.3851 29.5022 25.6493 33.2443 28.5639L33.16 28.5007C33.5126 28.7751 33.8216 29.0787 34.09 29.4163L34.0994 29.4271C34.257 29.5997 34.3537 29.8278 34.3537 30.0791C34.3537 30.4552 34.1368 30.7819 33.8201 30.9438L33.8138 30.9468C33.6437 31.0285 33.4455 31.0948 33.238 31.1318L33.224 31.1333C29.6661 31.7992 21.1771 31.9718 17.6567 31.998C13.2437 32.0289 2.39535 31.6913 1.08143 31.4771C0.939428 31.457 0.828635 31.343 0.817711 31.2027V31.2012C0.817711 31.0455 0.817711 30.9037 1.34515 30.7742C4.09157 30.0606 9.77948 28.0461 16.2851 23.0676C16.6175 22.787 16.9171 22.5466 17.2182 22.3431V22.3447Z"
+                ></path>
+                <path
+                  d="M19.9178 19.2296C18.9394 18.7734 18.22 17.9134 17.9719 16.873L17.9672 16.8498C17.3212 14.1987 16.9514 11.1562 16.9514 8.02726C16.9514 6.0821 17.0949 4.17085 17.3711 2.30275L17.3446 2.51546C17.4117 2.04381 17.5319 1.61686 17.7004 1.21612L17.6879 1.25002C17.819 0.853902 18.1904 0.571839 18.6273 0.571839C18.827 0.571839 19.0127 0.630409 19.1672 0.730596L19.1641 0.729055C19.3373 0.85082 19.4871 0.986457 19.6198 1.13751L19.6229 1.14059C21.9854 3.85333 26.3813 11.0344 28.1633 14.023C30.3932 17.7823 35.5443 27.2338 35.9766 28.473C35.9906 28.5069 36 28.547 36 28.5886C36 28.6919 35.9469 28.7828 35.8674 28.8383H35.8658C35.7347 28.9262 35.6021 28.9786 35.2338 28.6086C33.2146 26.6188 28.6174 22.7454 21.0055 19.6828C20.6044 19.5271 20.2471 19.3853 19.9194 19.2296H19.9178Z"
+                ></path>
+              </svg>
+
+              <span>2024 ყველა უფლება დაცულია</span>
+            </div>
+            <div class="flex md:flex-row flex-col order-1 gap-[2.5vw]">
+              <span>კონფიდენციალურობა</span>
+              <span>წესები და პირობები </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="main-wrapper" class="main-content sm:w-[85%] mx-auto">
+        <main>
+          <article class="mt-20 p-4">
+            <span class="font-medium text-xs">მთავარი</span>
+          </article>
+
+          <section
+            id="hero"
+            class="relative h-96 overflow-hidden rounded-md my-10"
+          >
+            <!-- Background Image -->
+            <img
+              src="./images/hero.webp"
+              alt="hero image"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <!-- Overlay Content -->
+            <div
+              class="absolute inset-0 bg-black bg-opacity-30 flex items-end px-12 text-white pb-8"
+            >
+              <div class="max-w-md">
+                <h2 class="text-2xl font-bold mb-6">თიბისი კონცეპტი</h2>
+                <p class="mb-6 text-pretty">
+                  პერსონალური საბანკო მომსახურება, მორგებული თქვენს საჭიროებებსა
+                  და ინტერესებზე
+                </p>
+                <button
+                  class="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-cyan-500 hover:to-cyan-600 text-white font-bold px-5 py-4 rounded flex items-center justify-center w-full sm:w-auto sm:justify-center"
+                >
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                  <span class="text-xs">გამოიწერეთ</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <article id="big-message" class="sm:pr-5 mt-28 p-4">
+            <p class="text-3xl font-medium text-balance">
+              გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო,
+              ისე არასაბანკო უპირატესობებით.
+            </p>
+          </article>
+
+          <section id="become-concept" class="mt-28 md:p-0 px-2">
+            <div>
+              <h2 class="text-2xl font-bold mb-8 p-4">შეარჩიეთ ნაკრები</h2>
+              <div
+                class="text-white grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-8 text-xl font-bold"
+              >
+                <div class="relative col-span-1 row-span-1">
+                  <img
+                    src="./images/concept-1.png"
+                    alt="image of concept bundle 1"
+                    class="w-full h-full object-cover rounded-md"
+                  />
+                  <div
+                    class="absolute inset-0 p-4 bg-black bg-opacity-30 text-white flex flex-col justify-end pb-8 rounded-md"
+                  >
+                    <span class="mb-5">ციფრული</span>
+                    <a
+                      href="#"
+                      class="flex items-center text-sm hover:text-gray-400"
+                    >
+                      <span class="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                      <span class="underline hover:no-underline"
+                        >იხილეთ მეტი</span
+                      >
+                    </a>
+                  </div>
+                </div>
+                <div class="relative row-span-2">
+                  <img
+                    src="./images/concept-3.png"
+                    alt="image of concept bundle 3"
+                    class="w-full h-full object-cover rounded-md"
+                  />
+                  <div
+                    class="absolute inset-0 p-4 bg-black bg-opacity-30 text-white flex flex-col justify-end pb-8 rounded-md"
+                  >
+                    <span class="mb-5">360</span>
+                    <a
+                      href="#"
+                      class="flex items-center text-sm hover:text-gray-400"
+                    >
+                      <span class="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                      <span class="underline hover:no-underline"
+                        >იხილეთ მეტი</span
+                      >
+                    </a>
+                  </div>
+                </div>
+                <div class="relative col-span-1 row-span-1">
+                  <img
+                    src="./images/concept-2.png"
+                    alt="image of concept bundle 2"
+                    class="w-full h-full object-cover rounded-md"
+                  />
+                  <div
+                    class="absolute inset-0 p-4 bg-black bg-opacity-30 text-white flex flex-col justify-end pb-8 rounded-md"
+                  >
+                    <span class="mb-5">პრემიუმი</span>
+                    <a
+                      href="#"
+                      class="flex items-center text-sm hover:text-gray-400"
+                    >
+                      <span class="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                      <span class="underline hover:no-underline"
+                        >იხილეთ მეტი</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="numbers" class="mt-28 w-full md:px-0 px-3">
+            <div>
+              <div class="flex md:flex-row flex-col gap-6">
+                <div
+                  class="flex items-center justify-center px-[40px] py-[48px] bg-gray-50 rounded-md md:w-96 w-full"
+                >
+                  <div class="flex flex-col w-full gap-3 pl-0 pr-10">
+                    <div class="text-4xl font-bold whitespace-nowrap">
+                      94 7250
+                    </div>
+                    <div class="text-sm leading-relaxed">მომხმარებელი</div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center justify-center px-[40px] py-[48px] bg-gray-50 rounded-md md:w-96 w-full"
+                >
+                  <div class="flex flex-col w-full gap-3 pl-0 pr-10">
+                    <div class="text-4xl font-bold whitespace-nowrap">150+</div>
+                    <div class="text-sm leading-relaxed">ღონისძიება</div>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center justify-center px-[40px] py-[48px] bg-gray-50 rounded-md md:w-96 w-full"
+                >
+                  <div class="flex flex-col w-full gap-3 pl-0 pr-10">
+                    <div class="text-4xl font-bold whitespace-nowrap">130+</div>
+                    <div class="text-sm leading-relaxed">შეთავაზება</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="offers" class="mt-28 sm:pl-5 px-3.5 mb-5">
+            <div>
+              <div class="flex justify-between items-center mb-4 sm:p-4 p-0">
+                <h2 class="sm:text-xl md:text-sm font-bold">შეთავაზებები</h2>
+                <div
+                  class="text-blue-700 hover:text-cyan-600 transition ease-in-out duration-700 sm:text-sm text-xs font-bold cursor-pointer flex items-center gap-[0.5vw]"
+                >
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                  ყველა შეთავაზება
+                </div>
+              </div>
+
+              <div class="slider-wrapper">
+                <div class="card-list">
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 h-80 border border-gray-200 transition-shadow duration-300 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md h-48 w-full transition-transform duration-300 hover:translate-y-[-2%]"
+                      >
+                        <img
+                          src="./images/offer-0.png"
+                          alt="offer 0 image"
+                          class="w-full h-full object-cover transition-transform duration-300"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-bold"
+                          >ინვესტიციები</span
+                        >
+                        <h3 class="font-bold text-xl leading-loose">
+                          MP დეველოპმენტი - აშშ და ებროს ობლიგაციები
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="logo absolute w-20 h-14"
+                      style="width: 78px; height: 56px; right: 0px; top: 20px"
+                    >
+                      <img
+                        src="./images/logo-m-p-dev.jpg"
+                        alt="m-p-dev logo"
+                        class="rounded-l-md"
+                      />
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 h-80 border border-gray-200 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md h-48 w-full transition-transform duration-300 hover:translate-y-[-2%]"
+                      >
+                        <img
+                          src="./images/offer-1.jpg"
+                          alt="offer 1 image"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-bold"
+                          >ჯაზ ფესტივალის შეთავაზებები</span
+                        >
+                        <h3 class="font-bold text-xl leading-loose">
+                          IVERIA BEACH - დაიბრუნეთ 30%
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="logo absolute w-20 h-14"
+                      style="width: 78px; height: 56px; right: 0px; top: 20px"
+                    >
+                      <img
+                        src="./images/broken-image.svg"
+                        alt="broken image 1"
+                        class="rounded-l-md"
+                      />
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 h-80 border border-gray-200 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md h-48 w-full transition-transform duration-300 hover:translate-y-[-2%]"
+                      >
+                        <img
+                          src="./images/offer-2.png"
+                          alt="offer 2 image"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-bold"
+                          >ავტო თეგეტა მოტორსი</span
+                        >
+                        <h3 class="font-bold text-xl leading-loose">
+                          თეგეტა მოტორსი - 50% ფასდაკლება
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="logo absolute w-20 h-14"
+                      style="width: 78px; height: 56px; right: 0px; top: 20px"
+                    >
+                      <img
+                        src="./images/broken-image.svg"
+                        alt=""
+                        class="broker image 2"
+                      />
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 h-80 border border-gray-200 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md h-48 w-full transition-transform duration-300 hover:translate-y-[-2%]"
+                      >
+                        <img
+                          src="./images/offer-3.png"
+                          alt="offer 3 image"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-bold"
+                          >თეგეტა მოტორსი</span
+                        >
+                        <h3 class="font-bold text-xl leading-loose">
+                          თეგეტა მოტორსი - ბათუმი
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="logo absolute w-20 h-14"
+                      style="width: 78px; height: 56px; right: 0px; top: 20px"
+                    >
+                      <img
+                        src="./images/broken-image.svg"
+                        alt=""
+                        class="broken image 3"
+                      />
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 h-80 border border-gray-200 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md h-48 w-full transition-transform duration-300 hover:translate-y-[-2%]"
+                      >
+                        <img
+                          src="./images/offer-4.png"
+                          alt="offer 4 image"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-bold"
+                          >დასვენება</span
+                        >
+                        <h3 class="font-bold text-xl leading-loose">
+                          Le Meridien Batumi - 15%-იანი ფასდაკლება
+                        </h3>
+                      </div>
+                    </div>
+                    <div
+                      class="logo absolute w-20 h-14"
+                      style="width: 78px; height: 56px; right: 0px; top: 20px"
+                    >
+                      <img
+                        src="./images/logo-meridien.png"
+                        alt=""
+                        class="rounded-l-md"
+                      />
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 h-80 border border-gray-200 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div class="">
+                        <div
+                          class="relative overflow-hidden rounded-t-md h-48 w-full transition-transform duration-300 hover:translate-y-[-2%]"
+                        >
+                          <img
+                            src="./images/offer-5.png"
+                            alt="offer 5 image"
+                            class="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div class="flex flex-col justify-between gap-5 p-4">
+                          <span
+                            class="text-slate-500 sm:text-sm text-xs font-bold"
+                            >დასვენება</span
+                          >
+                          <h3 class="font-bold text-xl leading-loose">
+                            Colosseum Marina Hotel - 15%-იანი ფასდაკლება
+                          </h3>
+                        </div>
+                      </div>
+                      <div
+                        class="logo absolute w-20 h-14"
+                        style="width: 78px; height: 56px; right: 0px; top: 20px"
+                      >
+                        <img
+                          src="./images/logo-colloseum.png"
+                          alt=""
+                          class="rounded-l-md"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+                </div>
+
+                <div class="slider-scrollbar flex justify-between items-center">
+                  <div class="scrollbar-track bg-slate-400 hover:h-[3px]">
+                    <div class="scrollbar-thumb bg-blue-700"></div>
+                  </div>
+                  <div class="xl:block hidden">
+                    <button
+                      class="slide-button prev-slide material-symbols-outlined text-blue-600 hover:text-purple-500"
+                    >
+                      arrow_back
+                    </button>
+                    <button
+                      class="slide-button next-slide material-symbols-outlined text-blue-600 hover:text-purple-500"
+                    >
+                      arrow_forward
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="digital-bank" class="mt-28 sm:pl-5 px-3.5 pt-10">
+            <div class="sm:relative static">
+              <h2
+                class="text-2xl font-bold sm:mb-0 mb-5 pl-5 sm:absolute sm:top-[13px]"
+              >
+                ციფრული ბანკი
+              </h2>
+              <div
+                class="flex sm:justify-between sm:flex-row flex-col sm:gap-10 gap-8"
+              >
+                <div
+                  class="flex flex-col justify-center gap-9 sm:p-1 sm:order-1 order-2 p-2.5"
+                >
+                  <p class="text-md text-slate-700 leading-relaxed sm:self-end">
+                    შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის
+                    დახმარებით
+                  </p>
+                  <div class="lg:flex gap-6 hidden">
+                    <div>
+                      <img
+                        src="./images/google-play-badge.svg"
+                        alt="google play badge"
+                        class="bg-white p-2.5 rounded-md border border-slate-400 hover:shadow-inner cursor-pointer"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="./images/app-store-badge.svg"
+                        alt="app store badge"
+                        class="bg-white p-2.5 rounded-md border border-slate-400 hover:shadow-inner cursor-pointer"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="lg:hidden flex items-center justify-center py-3 px-6 text-blue-700 border border-blue-700 w-full sm:w-auto bg-gray-50 hover:border-slate-400 rounded-md"
+                    >
+                      <span class="material-symbols-outlined"> download </span>
+                      <span class="uppercase font-bold">downlaod</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="sm:self-end sm:order-2 order-1">
+                  <img
+                    src="./images/digital-bank.png"
+                    alt="digital bank image"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="products" class="mt-28 sm:pl-5 px-3.5 pt-10">
+            <div>
+              <h2 class="sm:text-2xl text-sm font-bold mb-8 sm:p-4 p-0">
+                პროდუქტები
+              </h2>
+
+              <div class="slider-wrapper">
+                <div class="card-list">
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 border border-gray-200 transition-shadow duration-300 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md transition-transform duration-300 hover:translate-y-[-2%] h-[180px] sm:h-[200px] md:h-[243px]"
+                      >
+                        <img
+                          src="./images/concept-1.png"
+                          alt="product 1 image"
+                          class="object-cover"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-800 sm:text-sm text-xs font-bold"
+                          >ციფრული</span
+                        >
+                        <p
+                          class="font-medium text-sm leading-loose text-gray-500"
+                        >
+                          თიბისი კონცეპტის ციფრული ნაკრები განკუთვნილია მათთვის,
+                          ვისთვისაც
+                          <strong class="text-slate-700"
+                            >საბანკო მომსახურებით სარგებლოა ყოველდღიურობსი
+                            ნაწილია,</strong
+                          >
+                          ვინც..
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 border border-gray-200 transition-shadow duration-300 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md transition-transform duration-300 hover:translate-y-[-2%] h-[180px] sm:h-[200px] md:h-[243px]"
+                      >
+                        <img
+                          src="./images/concept-2.png"
+                          alt="product 2 image"
+                          class="object-cover"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-800 sm:text-sm text-xs font-bold"
+                          >პრემიუმი</span
+                        >
+                        <p
+                          class="font-medium text-sm leading-loose text-gray-500"
+                        >
+                          <strong
+                            class="text-slate-800 sm:text-sm text-xs font-bold"
+                            >პრემიუმ ნაკრები</strong
+                          >
+                          თიბისი კონცეპტის მომხმარებლებთან ურთიერთობის ერთ-ერთი
+                          ფორმატი - , სხვა საბანკო და არასაბანკო უპირატესობებთან
+                          ერთად...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="card relative rounded-md shadow-md bg-slate-50 border border-gray-200 hover:shadow-xl hover:bg-white"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div
+                        class="relative overflow-hidden rounded-t-md transition-transform duration-300 hover:translate-y-[-2%] h-[180px] sm:h-[200px] md:h-[243px]"
+                      >
+                        <img
+                          src="./images/concept-3.png"
+                          alt="product 3 image"
+                          class="object-cover"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-5 p-4">
+                        <span
+                          class="text-slate-800 sm:text-sm text-xs font-bold"
+                          >360</span
+                        >
+
+                        <p
+                          class="font-medium text-sm leading-loose text-gray-500"
+                        >
+                          <strong
+                            class="text-slate-800 sm:text-sm text-xs font-bold"
+                            >თიბისი კონცეპტის 360</strong
+                          >
+                          ნაკრები განკუთვნილია მათვის, ვისაც სხვა საბანკო და
+                          არასაბანკო უპირატესობებთან ერთად, კიდევ უფრო...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+                </div>
+
+                <div class="slider-scrollbar flex justify-between items-center">
+                  <div class="scrollbar-track bg-slate-400 hover:h-[3px]">
+                    <div class="scrollbar-thumb bg-blue-700"></div>
+                  </div>
+                  <div class="xl:block hidden">
+                    <button
+                      class="slide-button prev-slide material-symbols-outlined text-blue-600 hover:text-purple-500"
+                    >
+                      arrow_back
+                    </button>
+                    <button
+                      class="slide-button next-slide material-symbols-outlined text-blue-600 hover:text-purple-500"
+                    >
+                      arrow_forward
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            id="home-hero"
+            class="relative h-96 overflow-hidden rounded-md my-10"
+          >
+            <img
+              src="./images/home-hero-banner.png"
+              alt="hero image"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+
+            <div
+              class="absolute inset-0 bg-black bg-opacity-30 flex items-end sm:px-12 px-4 text-white pb-8"
+            >
+              <div class="max-w-md">
+                <h2 class="text-2xl font-bold mb-6">პირადი ბანკირი</h2>
+                <p class="mb-6 text-pretty tracking-wide">
+                  თქვენი სანდო პარტნიორი ფინანსურ რჩევებსა და ოპერაციებში
+                </p>
+                <button
+                  class="mt-2 bg-gradient-to-r from-blue-900 to-blue-700 hover:from-cyan-500 hover:to-cyan-600 text-white font-bold px-5 py-4 rounded flex items-center justify-center w-full sm:w-auto sm:justify-center"
+                >
+                  <span class="ml-2 text-xs">გაიგეთ მეტი</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section id="awards" class="mt-28 sm:pl-5 px-3.5">
+            <div>
+              <h2
+                class="sm:text-2xl text-sm font-bold sm:mb-5 mb-4 sm:p-4 pl-1"
+              >
+                ჯილდოები
+              </h2>
+              <div class="slider-wrapper">
+                <div class="card-list mb-8">
+                  <!-- CARD -->
+                  <div
+                    class="award-card w-[424px] h-80 relative rounded-md shadow-md bg-white pt-11 px-6"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div class="relative overflow-hidden rounded-t-md pl-4">
+                        <img
+                          src="./images/award-1-logo.png"
+                          alt="award 1 logo"
+                          class="object-cover w-40 h-15"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-9 p-4">
+                        <h3 class="font-bold text-lg leading-relaxed">
+                          საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში
+                          2024
+                        </h3>
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-medium"
+                          >The Global Finance</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="award-card w-[424px] h-80 relative rounded-md shadow-md bg-white pt-11 px-6"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div class="relative overflow-hidden rounded-t-md pl-4">
+                        <img
+                          src="./images/award-2-logo.png"
+                          alt="award 2 logo"
+                          class="object-cover w-40 h-15"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-9 p-4">
+                        <h3 class="font-bold text-lg leading-relaxed">
+                          საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში
+                          2023
+                        </h3>
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-medium"
+                          >Euromoney</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+
+                  <!-- CARD -->
+                  <div
+                    class="award-card w-[424px] h-80 relative rounded-md shadow-md bg-white pt-11 px-6"
+                  >
+                    <div class="flex flex-col h-full">
+                      <div class="relative overflow-hidden rounded-t-md pl-4">
+                        <img
+                          src="./images/award-3-logo.png"
+                          alt="award 4 logo"
+                          class="object-cover w-40 h-15"
+                        />
+                      </div>
+                      <div class="flex flex-col justify-between gap-9 p-4">
+                        <h3 class="font-bold text-lg leading-relaxed">
+                          საუკეთესო პერსონალური საბანკო მომსახურება საქართველოში
+                          2021
+                        </h3>
+                        <span
+                          class="text-slate-500 sm:text-sm text-xs font-medium"
+                          >The Banker & PWM</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END OF CARD -->
+                </div>
+
+                <div class="slider-scrollbar flex justify-between items-center">
+                  <div class="scrollbar-track bg-slate-400 hover:h-[3px]">
+                    <div class="scrollbar-thumb bg-blue-700"></div>
+                  </div>
+                  <div class="xl:block hidden">
+                    <button
+                      class="slide-button prev-slide material-symbols-outlined text-blue-600 hover:text-purple-500"
+                    >
+                      arrow_back
+                    </button>
+                    <button
+                      class="slide-button next-slide material-symbols-outlined text-blue-600 hover:text-purple-500"
+                    >
+                      arrow_forward
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <footer class="main-content bg-white mt-24 my-0">
+        <div>
+          <div class="footer-top md:py-[40px] py-[30px]">
+            <div
+              class="flex items-center mx-auto justify-between sm:w-[85%] px-5"
+            >
+              <div class="text-black hidden md:block">
+                <a href="#">
+                  <svg
+                    data-v-562b0aec=""
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    class="sm:w-44 sm:h-auto w-48 h-auto p-3"
+                    viewbox="0 0 165 32"
+                    fill="currentColor"
+                  >
+                    <path
+                      data-v-562b0aec=""
+                      d="M13.92,5.92c.11.06.26.23.29.26,1.47,1.7,4.2,6.2,5.31,8.09,1.39,2.36,4.58,8.29,4.85,9.07.03.08,0,.18-.07.23-.08.05-.17.09-.4-.15-1.24-1.25-4.11-3.68-8.84-5.6-.25-.1-.47-.19-.68-.28-.66-.33-1.03-.82-1.21-1.5-.53-2.01-.91-5.76-.39-9,.02-.11.08-.5.21-.8.21-.45.6-.5.92-.32ZM12.14,5.48c.09.04.16.1.07.41-.47,1.7-1.14,5.39-.45,10.44.04.26.07.5.09.73.04.74-.2,1.3-.69,1.79-1.48,1.46-4.54,3.66-7.61,4.83-.11.04-.47.18-.8.21-.5.05-.74-.26-.74-.63,0-.13.07-.34.08-.38.74-2.12,3.29-6.73,4.37-8.63,1.35-2.38,4.91-8.1,5.45-8.73.05-.07.15-.1.23-.06ZM14.62,19.18c2.01.55,5.45,2.09,8,4.16.09.07.39.32.58.58.29.41.14.77-.18.95-.11.06-.33.11-.37.12-2.21.42-7.48.53-9.67.54-2.74.02-9.49-.19-10.3-.34-.09-.01-.16-.08-.17-.17,0-.1,0-.19.32-.27,1.71-.45,5.25-1.71,9.28-4.84.21-.16.4-.31.58-.44.62-.41,1.23-.48,1.9-.3Z"
+                      class="cls-2"
+                    ></path>
+
+                    <path
+                      data-v-562b0aec=""
+                      d="M81.72,12.35c-1.84,0-3.11,1.39-3.11,3.09s1.15,3.09,3.11,3.09,3.1-1.39,3.1-3.09-1.26-3.09-3.1-3.09ZM68.36,9.65c2.85,0,4.6,2.21,4.6,5.38h0c0,2.48-.88,4.38-2.47,5.91l-1.94-1.63c.9-1.01,1.71-2.58,1.71-4.27,0-1.81-.91-2.92-2.24-2.92s-2.27.86-2.27,2.67v2.57h-2.71v-2.57c0-1.81-.94-2.67-2.27-2.67s-2.24,1.11-2.24,2.92v.16c.05,1.64.83,3.14,1.71,4.12l-1.94,1.63c-1.59-1.53-2.47-3.42-2.47-5.9h0s0-.14,0-.14c.05-3.1,1.78-5.24,4.6-5.24,1.99,0,3.4.9,3.96,2.25.57-1.35,1.97-2.25,3.96-2.25ZM152.31,9.65c3.48,0,5.68,2.6,5.68,5.72,0,2.34-.77,4.13-2.16,5.57l-1.95-1.61c1.09-1.4,1.41-2.67,1.41-3.95,0-1.83-1.02-3.27-2.97-3.27s-2.97,1.44-2.97,3.27c0,1.28.31,2.55,1.41,3.95l-1.95,1.61c-1.39-1.44-2.16-3.23-2.16-5.57,0-3.11,2.2-5.72,5.68-5.72ZM124.49,5.33v.12c0,1.21,3.11,1.73,3.11,4.12,0,1.18-.93,2-2.04,2.25,1.9.61,3.08,2.11,3.08,4.27,0,2.87-2.15,4.97-5.7,4.97-2.57,0-4.77-1.44-5.34-3.91l2.44-1.01c.39,1.49,1.5,2.45,2.9,2.45,1.97,0,2.97-1.15,2.97-2.55,0-1.64-1.15-2.68-2.97-2.68h-1.67v-2.45h1.52c1.31,0,2.08-.49,2.08-1.33,0-1.54-3.11-1.58-3.11-4.06v-.18h2.73ZM86.32,5.41v2.45h-6.62c-.99,0-1.33.59-1.33,1.33v2.1c.78-1.19,2.48-1.55,3.64-1.55,3.5,0,5.52,2.52,5.52,5.7s-2.18,5.7-5.81,5.7-6.05-2.43-6.05-6.2v-5.67c0-2.13,1.44-3.86,3.88-3.86h6.78ZM136.74,14.33c-2.26.48-3.15,2.49-3.2,4.38.06,2.17,1.21,4.49,4.27,4.49s4.21-2.32,4.27-4.49c-.05-1.86-.9-3.82-3.07-4.35.07.39.21,1.28.21,1.99v1.19h-2.71v-1.19c0-.72.15-1.65.22-2.02ZM139.23,9.94v.57c0,.42-.05.92-.11,1.33,3.88.56,5.69,3.65,5.69,6.87,0,3.56-2.22,6.96-7,6.96s-7-3.4-7-6.96c0-3.25,1.85-6.37,5.81-6.88-.06-.41-.11-.89-.11-1.31v-.57h2.71ZM100.78,9.94v.12c0,1.49,1.15,1.84,1.15,3.41,0,1.49-.97,2.24-2.37,2.52,2.02.55,3.08,1.93,3.08,4.21,0,3.04-2.2,5.46-6,5.46s-5.98-2.55-5.98-5.68v-10.05h2.71v10.05c0,1.65,1.1,3.2,3.27,3.2s3.27-1.45,3.27-3.05c0-1.78-1.15-2.93-2.97-2.93h-.46v-2.45h1.04c1.04,0,1.67-.55,1.67-1.39,0-1.22-1.15-1.44-1.15-3.26v-.18h2.73ZM110.29,9.65c3.31,0,5.35,1.92,5.35,5.35v5.39c0,3.05-2.1,5.28-5.47,5.28-3.02,0-5.13-1.65-5.47-4.69l2.48-.69c.22,1.93,1.31,2.91,2.85,2.91,2.04,0,2.88-1.26,2.88-2.86v-5.31c0-1.66-.89-2.92-2.62-2.92s-2.64,1.26-2.64,2.92v.97h-2.71v-.99c0-3.42,2.03-5.35,5.35-5.35ZM52.59,9.94v2.38c0,1.67-.69,2.85-1.98,3.5,1.93.71,3.08,2.3,3.08,4.58,0,3.05-2.15,5.28-5.7,5.28-2.57,0-4.77-1.44-5.34-3.91l2.44-1.01c.39,1.49,1.5,2.45,2.9,2.45,1.97,0,2.97-1.26,2.97-2.86,0-1.78-1.15-2.99-2.97-2.99h-1.79v-2.45h1.18c1.69,0,2.48-.99,2.48-2.38v-2.57h2.73Z"
+                      class="cls-2"
+                    ></path>
+                    <rect
+                      data-v-562b0aec=""
+                      x="33.06"
+                      y=".84"
+                      width=".99"
+                      height="29.32"
+                      class="cls-1"
+                    ></rect>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="text-black md:hidden block">
+                <a href="#">
+                  <div class="svg-container">
+                    <svg
+                      data-v-562b0aec=""
+                      class="w-9 h-8"
+                      viewbox="0 0 36 32"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        data-v-562b0aec=""
+                        d="M15.8154 18.4806C15.8263 18.5838 15.8325 18.7025 15.8325 18.8227C15.8325 19.8184 15.4065 20.7155 14.7261 21.3474L14.7246 21.349C11.2681 24.5334 7.20468 27.1305 2.73238 28.9447L2.4671 29.0402C2.09727 29.1913 1.66502 29.3099 1.21717 29.3747L1.18752 29.3778C1.1251 29.3916 1.05332 29.3993 0.979974 29.3993C0.438492 29.3993 0 28.9662 0 28.4314C0 28.4114 0 28.3898 0.00156047 28.3697V28.3728C0.0187256 28.154 0.0639792 27.949 0.13264 27.7578L0.127958 27.7748C1.32952 24.3946 5.39922 17.0533 7.15475 14.0277C9.33784 10.2375 15.0632 1.11901 15.9168 0.118682C15.973 0.0462399 16.0588 0 16.1571 0C16.2055 0 16.2523 0.0107893 16.2929 0.0323679L16.2913 0.0308266C16.4333 0.0986452 16.5503 0.186501 16.4068 0.692058C15.6577 3.39401 14.5717 9.27881 15.6952 17.3246C15.7529 17.7407 15.8169 18.1214 15.8169 18.4806H15.8154Z"
+                      ></path>
+                      <path
+                        data-v-562b0aec=""
+                        d="M17.2182 22.3447C17.78 21.9501 18.4807 21.7143 19.2375 21.7143C19.6104 21.7143 19.9693 21.7713 20.3064 21.8776L20.2814 21.8715C25.2172 23.3851 29.5022 25.6493 33.2443 28.5639L33.16 28.5007C33.5126 28.7751 33.8216 29.0787 34.09 29.4163L34.0994 29.4271C34.257 29.5997 34.3537 29.8278 34.3537 30.0791C34.3537 30.4552 34.1368 30.7819 33.8201 30.9438L33.8138 30.9468C33.6437 31.0285 33.4455 31.0948 33.238 31.1318L33.224 31.1333C29.6661 31.7992 21.1771 31.9718 17.6567 31.998C13.2437 32.0289 2.39535 31.6913 1.08143 31.4771C0.939428 31.457 0.828635 31.343 0.817711 31.2027V31.2012C0.817711 31.0455 0.817711 30.9037 1.34515 30.7742C4.09157 30.0606 9.77948 28.0461 16.2851 23.0676C16.6175 22.787 16.9171 22.5466 17.2182 22.3431V22.3447Z"
+                      ></path>
+                      <path
+                        data-v-562b0aec=""
+                        d="M19.9178 19.2296C18.9394 18.7734 18.22 17.9134 17.9719 16.873L17.9672 16.8498C17.3212 14.1987 16.9514 11.1562 16.9514 8.02726C16.9514 6.0821 17.0949 4.17085 17.3711 2.30275L17.3446 2.51546C17.4117 2.04381 17.5319 1.61686 17.7004 1.21612L17.6879 1.25002C17.819 0.853902 18.1904 0.571839 18.6273 0.571839C18.827 0.571839 19.0127 0.630409 19.1672 0.730596L19.1641 0.729055C19.3373 0.85082 19.4871 0.986457 19.6198 1.13751L19.6229 1.14059C21.9854 3.85333 26.3813 11.0344 28.1633 14.023C30.3932 17.7823 35.5443 27.2338 35.9766 28.473C35.9906 28.5069 36 28.547 36 28.5886C36 28.6919 35.9469 28.7828 35.8674 28.8383H35.8658C35.7347 28.9262 35.6021 28.9786 35.2338 28.6086C33.2146 26.6188 28.6174 22.7454 21.0055 19.6828C20.6044 19.5271 20.2471 19.3853 19.9194 19.2296H19.9178Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                class="lang-dropdown cursor-pointer relative inline-block group"
+              >
+                <div
+                  class="cur-lang flex items-center hover:bg-gray-100 p-2 rounded-md"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="#4b5563"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.6654 7.99992C14.6654 4.32659 11.672 1.33325 7.9987 1.33325C4.32536 1.33325 1.33203 4.32659 1.33203 7.99992C1.33203 11.6733 4.32536 14.6666 7.9987 14.6666C11.672 14.6666 14.6654 11.6733 14.6654 7.99992ZM13.2854 7.33325H11.3187C11.2587 5.83325 10.972 4.37325 10.4587 3.26659C11.9787 4.05992 13.072 5.55992 13.292 7.33325H13.2854ZM7.9987 13.3333C6.9787 13.3333 6.1387 11.2999 6.0187 8.66659H9.98536C9.86536 11.2999 9.02536 13.3333 8.00536 13.3333H7.9987ZM6.0187 7.33325C6.1387 4.69992 6.9787 2.66659 7.9987 2.66659C9.0187 2.66659 9.8587 4.69992 9.9787 7.33325H6.01203H6.0187ZM5.54536 3.26659C5.02536 4.37325 4.74536 5.82659 4.68536 7.33325H2.7187C2.9387 5.55992 4.03203 4.05992 5.55203 3.26659H5.54536ZM2.71203 8.66659H4.6787C4.7387 10.1666 5.02536 11.6266 5.5387 12.7333C4.0187 11.9399 2.92536 10.4399 2.70536 8.66659H2.71203ZM10.452 12.7333C10.972 11.6266 11.252 10.1733 11.312 8.66659H13.2787C13.0587 10.4399 11.9654 11.9399 10.4454 12.7333H10.452Z"
+                    ></path>
+                  </svg>
+                  <div>ქარ</div>
+                </div>
+                <div
+                  class="other-lang absolute left-0 top-[40px] bg-white border border-gray-300 font-medium rounded-md transition-opacity duration-600 ease-in-out opacity-0 group-hover:opacity-100 group-hover:block z-30"
+                >
+                  <div class="py-2">
+                    <div
+                      class="hover:bg-gray-100 bg-white w-full py-1.5 px-3.5"
+                    >
+                      Eng
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-main text-slate-600 md:px-8 px-0">
+            <div class="footer-main-container">
+              <div class="flex md:flex-row flex-col md:gap-[7vw] gap-0">
+                <!-- first -->
+
+                <div
+                  class="footer-main-col flex flex-col md:border-0 border-t border-t-gray-200 py-2"
+                >
+                  <div
+                    class="flex justify-between items-center flex-wrap md:gap-[3vw] gap-0 space-y-2 py-5 pl-4"
+                  >
+                    <a href="#" class="block font-bold text-slate-900 flex-none"
+                      >პროდუქტები</a
+                    >
+
+                    <div class="md:hidden flex-none pr-5">
+                      <button class="accordion-toggle" data-target="#dropdown4">
+                        <span class="material-symbols-outlined text-slate-900"
+                          >keyboard_arrow_down</span
+                        >
+                      </button>
+                    </div>
+
+                    <div
+                      id="dropdown4"
+                      class="dropdown-items flex flex-col space-y-3 w-full md:max-h-none md:overflow-visible my-1 md:my-0"
+                    >
+                      <a href="#" class="block">ნაკრები</a>
+                      <a href="#" class="block">პერსონალური ბანკირი</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- second -->
+                <div
+                  class="footer-main-col flex flex-col md:border-0 border-t border-t-gray-200"
+                >
+                  <div
+                    class="flex justify-between items-center flex-wrap md:gap-[3vw] gap-0 space-y-2 py-5 pl-4"
+                  >
+                    <a href="#" class="block font-bold text-slate-900 flex-none"
+                      >Lifestyle</a
+                    >
+
+                    <div class="md:hidden flex-none pr-5">
+                      <button class="accordion-toggle" data-target="#dropdown5">
+                        <span class="material-symbols-outlined text-slate-900"
+                          >keyboard_arrow_down</span
+                        >
+                      </button>
+                    </div>
+
+                    <div
+                      id="dropdown5"
+                      class="dropdown-items flex flex-col space-y-3 w-full md:max-h-none md:overflow-visible my-1 md:my-0"
+                    >
+                      <a href="#" class="block">შეთავაზებები</a>
+                      <a href="#" class="block">ღონისძიებები</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- third -->
+                <div
+                  class="footer-main-col flex flex-col md:border-0 border-t border-t-gray-200 pr-5"
+                >
+                  <div
+                    class="flex justify-between items-center flex-wrap md:gap-[3vw] gap-0 space-y-2 py-5 pl-4"
+                  >
+                    <a href="#" class="block font-bold text-slate-900 flex-none"
+                      >კონცეპტის სივრცე</a
+                    >
+
+                    <div class="md:hidden flex-none">
+                      <button class="accordion-toggle" data-target="#dropdown6">
+                        <span class="material-symbols-outlined text-slate-900"
+                          >keyboard_arrow_down</span
+                        >
+                      </button>
+                    </div>
+
+                    <div
+                      id="dropdown6"
+                      class="dropdown-items flex flex-col gap-5 w-full md:max-h-none md:overflow-visible my-1 md:my-0 space-y-3"
+                    >
+                      <a href="#" class="block">ბიბლიოთეკა</a>
+                      <a href="#" class="block">კაფე</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- fourth -->
+                <div
+                  class="footer-main-col flex flex-col md:gap-[3vw] gap-[7vw] font-medium md:border-0 border-t border-t-gray-200 py-5 md:pl-0 pl-4"
+                >
+                  <div>
+                    <p class="font-bold text-slate-900 cursor-pointer">
+                      დაგვიკავშირდით:
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[0.5vw] cursor-pointer">
+                    <span class="material-symbols-outlined"> call </span>
+                    <a href="#" class="hover:underline">+995 32 2 27 27 00</a>
+                  </div>
+                  <div class="flex items-center gap-[0.5vw] cursor-pointer">
+                    <span class="material-symbols-outlined"> mail </span>
+                    <a href="#" class="hover:underline">info@tbcconcept.ge</a>
+                  </div>
+                  <div class="flex items-center gap-[0.5vw] cursor-pointer">
+                    <span class="material-symbols-outlined"> location_on </span>
+                    <a href="#" class="hover:underline">ფილიალები</a>
+                  </div>
+                  <div>
+                    <div>
+                      <p class="font-bold text-slate-900 mb-3.5">
+                        სოციალური ქსელები
+                      </p>
+                      <div class="flex items-center md:gap-[0.5vw] gap-[4vw]">
+                        <div
+                          class="bg-gray-100 p-2.5 rounded-md hover:bg-gray-200 hover:text-blue-700"
+                        >
+                          <a
+                            data-v-174d8ed1=""
+                            href="https://www.facebook.com/tbcconcept"
+                            target="_self"
+                            class="footer_social-link w-inline-block"
+                            ><div data-v-174d8ed1="" class="icon w-embed">
+                              <svg
+                                width="17"
+                                height="16"
+                                viewBox="0 0 17 16"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_167_7547)">
+                                  <path
+                                    d="M9.83464 9.00163H11.5013L12.168 6.33496H9.83464V5.00163C9.83464 4.31496 9.83464 3.66829 11.168 3.66829H12.168V1.42829C11.9506 1.39963 11.13 1.33496 10.2633 1.33496C8.4533 1.33496 7.16797 2.43963 7.16797 4.46829V6.33496H5.16797V9.00163H7.16797V14.6683H9.83464V9.00163Z"
+                                  ></path>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_167_7547">
+                                    <rect
+                                      width="16"
+                                      height="16"
+                                      fill="white"
+                                      transform="translate(0.5 0.000976562)"
+                                    ></rect>
+                                  </clipPath>
+                                </defs>
+                              </svg></div
+                          ></a>
+                        </div>
+                        <div
+                          class="bg-gray-100 p-2.5 rounded-md hover:bg-gray-200 hover:text-blue-700"
+                        >
+                          <a
+                            data-v-174d8ed1=""
+                            href="https://www.instagram.com/tbc_concept/"
+                            target="_self"
+                            class="footer_social-link w-inline-block"
+                            ><div data-v-174d8ed1="" class="icon w-embed">
+                              <svg
+                                width="17"
+                                height="16"
+                                viewBox="0 0 17 16"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="bi bi-instagram"
+                              >
+                                <path
+                                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                ></path>
+                              </svg></div
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="footer-bottom sm:text-xs text-sm p-6 bg-gray-50 border-t border-t-gray-200"
+          >
+            <div
+              class="flex justify-between md:flex-row flex-col md:items-center items-start gap-[5vw]"
+            >
+              <div
+                class="flex items-center justify-between md:order-1 order-2 gap-[3vw]"
+              >
+                <svg
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="21"
+                  height="32"
+                  viewBox="0 0 36 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#6F787B"
+                >
+                  <path
+                    d="M15.8154 18.4806C15.8263 18.5838 15.8325 18.7025 15.8325 18.8227C15.8325 19.8184 15.4065 20.7155 14.7261 21.3474L14.7246 21.349C11.2681 24.5334 7.20468 27.1305 2.73238 28.9447L2.4671 29.0402C2.09727 29.1913 1.66502 29.3099 1.21717 29.3747L1.18752 29.3778C1.1251 29.3916 1.05332 29.3993 0.979974 29.3993C0.438492 29.3993 0 28.9662 0 28.4314C0 28.4114 0 28.3898 0.00156047 28.3697V28.3728C0.0187256 28.154 0.0639792 27.949 0.13264 27.7578L0.127958 27.7748C1.32952 24.3946 5.39922 17.0533 7.15475 14.0277C9.33784 10.2375 15.0632 1.11901 15.9168 0.118682C15.973 0.0462399 16.0588 0 16.1571 0C16.2055 0 16.2523 0.0107893 16.2929 0.0323679L16.2913 0.0308266C16.4333 0.0986452 16.5503 0.186501 16.4068 0.692058C15.6577 3.39401 14.5717 9.27881 15.6952 17.3246C15.7529 17.7407 15.8169 18.1214 15.8169 18.4806H15.8154Z"
+                  ></path>
+                  <path
+                    d="M17.2182 22.3447C17.78 21.9501 18.4807 21.7143 19.2375 21.7143C19.6104 21.7143 19.9693 21.7713 20.3064 21.8776L20.2814 21.8715C25.2172 23.3851 29.5022 25.6493 33.2443 28.5639L33.16 28.5007C33.5126 28.7751 33.8216 29.0787 34.09 29.4163L34.0994 29.4271C34.257 29.5997 34.3537 29.8278 34.3537 30.0791C34.3537 30.4552 34.1368 30.7819 33.8201 30.9438L33.8138 30.9468C33.6437 31.0285 33.4455 31.0948 33.238 31.1318L33.224 31.1333C29.6661 31.7992 21.1771 31.9718 17.6567 31.998C13.2437 32.0289 2.39535 31.6913 1.08143 31.4771C0.939428 31.457 0.828635 31.343 0.817711 31.2027V31.2012C0.817711 31.0455 0.817711 30.9037 1.34515 30.7742C4.09157 30.0606 9.77948 28.0461 16.2851 23.0676C16.6175 22.787 16.9171 22.5466 17.2182 22.3431V22.3447Z"
+                  ></path>
+                  <path
+                    d="M19.9178 19.2296C18.9394 18.7734 18.22 17.9134 17.9719 16.873L17.9672 16.8498C17.3212 14.1987 16.9514 11.1562 16.9514 8.02726C16.9514 6.0821 17.0949 4.17085 17.3711 2.30275L17.3446 2.51546C17.4117 2.04381 17.5319 1.61686 17.7004 1.21612L17.6879 1.25002C17.819 0.853902 18.1904 0.571839 18.6273 0.571839C18.827 0.571839 19.0127 0.630409 19.1672 0.730596L19.1641 0.729055C19.3373 0.85082 19.4871 0.986457 19.6198 1.13751L19.6229 1.14059C21.9854 3.85333 26.3813 11.0344 28.1633 14.023C30.3932 17.7823 35.5443 27.2338 35.9766 28.473C35.9906 28.5069 36 28.547 36 28.5886C36 28.6919 35.9469 28.7828 35.8674 28.8383H35.8658C35.7347 28.9262 35.6021 28.9786 35.2338 28.6086C33.2146 26.6188 28.6174 22.7454 21.0055 19.6828C20.6044 19.5271 20.2471 19.3853 19.9194 19.2296H19.9178Z"
+                  ></path>
+                </svg>
+
+                <span>2024 ყველა უფლება დაცულია</span>
+              </div>
+              <div class="flex md:flex-row flex-col order-1 gap-[2.5vw]">
+                <span>კონფიდენციალურობა</span>
+                <span>წესები და პირობები </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div
+        class="button-menu fixed bottom-[24px] right-[24px] z-50 rounded-full p-4 cursor-pointer bg-gray-700 hover:opacity-85 transition ease-in-out duration-600"
+        id="menuButton"
+      >
+        <div
+          class="button-menu-trigger flex items-center justify-center w-full h-full"
+        >
+          <div class="icon w-6 h-6">
+            <!-- Three dots icon -->
+            <svg
+              id="threeDotsIcon"
+              class="block"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 8C13.65 8 15 6.65 15 5C15 3.35 13.65 2 12 2C10.35 2 9 3.35 9 5C9 6.65 10.35 8 12 8ZM12 9C10.35 9 9 10.35 9 12C9 13.65 10.35 15 12 15C13.65 15 15 13.65 15 12C15 10.35 13.65 9 12 9ZM12 16C10.35 16 9 17.35 9 19C9 20.65 10.35 22 12 22C13.65 22 15 20.65 15 19C15 17.35 13.65 16 12 16Z"
+              ></path>
+            </svg>
+
+            <!-- Cross icon -->
+            <svg
+              id="crossIcon"
+              class="hidden"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 18L18 6M6 6L18 18"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div
+          id="dropdownMenu"
+          class="hidden absolute bottom-[60px] right-[-12px] z-40 bg-transparent"
+        >
+          <div class="dd-menu-items py-2 flex flex-col">
+            <!-- pirveli -->
+            <div class="w-auto h-auto">
+              <a href="#" class="flex items-center px-4 py-2 relative group">
+                <div
+                  class="icon-theme bg-white p-2.5 rounded-full hover:bg-cyan-500 hover:text-white"
+                >
+                  <div class="icon">
+                    <svg
+                      data-v-42e74cda=""
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        data-v-42e74cda=""
+                        d="M21.0007 4.66675H7.00065C4.42232 4.66675 2.33398 6.75508 2.33398 9.33342V18.6784C2.33398 21.2568 4.42232 23.3451 7.00065 23.3451H21.0007C23.579 23.3451 25.6673 21.2568 25.6673 18.6784V9.33342C25.6673 6.75508 23.579 4.66675 21.0007 4.66675ZM21.0007 7.00008C21.1407 7.00008 21.269 7.02342 21.409 7.03508L14.0007 11.4801L6.56898 7.04675C6.70898 7.02341 6.86065 7.00008 7.01232 7.00008H21.0123H21.0007ZM23.334 18.6784C23.334 19.9618 22.284 21.0117 21.0007 21.0117H7.00065C5.71732 21.0117 4.66732 19.9618 4.66732 18.6784V9.33342C4.66732 9.11175 4.71398 8.90175 4.77232 8.69175L13.4057 13.8484C13.5923 13.9534 13.7907 14.0117 14.0007 14.0117C14.2107 14.0117 14.4207 13.9534 14.5957 13.8484L23.2173 8.66841C23.2756 8.87842 23.3223 9.10008 23.3223 9.33342V18.6784H23.334Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="hover-content opacity-0 group-hover:opacity-100">
+                  <div
+                    class="button-menu-tooltip text-white bg-gray-700 p-3 absolute rounded-md text-sm right-[78px] top-[10px]"
+                  >
+                    <div>მოგვწერეთ</div>
+                    <div
+                      class="button-menu-tooltip-arrow flex items-center absolute top-0 bottom-0 left-auto right-[-6px]"
+                    >
+                      <svg
+                        width="8"
+                        height="24"
+                        viewBox="0 0 8 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z"
+                          fill="#334155"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- meore -->
+            <div class="w-auto h-auto">
+              <a href="#" class="flex items-center px-4 py-2 relative group">
+                <div
+                  class="icon-theme bg-white p-2.5 rounded-full hover:bg-cyan-500 hover:text-white"
+                >
+                  <div class="icon">
+                    <svg
+                      data-v-42e74cda=""
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        data-v-42e74cda=""
+                        d="M14.0007 25.6666C7.58398 25.6666 2.33398 20.4166 2.33398 13.9999C2.33398 7.58325 7.58398 2.33325 14.0007 2.33325C20.4173 2.33325 25.6673 7.58325 25.6673 13.9999C25.6673 15.8666 25.3173 17.6166 24.5007 19.1333C24.2673 19.7166 23.5673 19.9499 22.984 19.7166C22.4007 19.4833 22.1673 18.7833 22.4007 18.1999C23.1007 16.9166 23.334 15.5166 23.334 13.9999C23.334 8.86658 19.134 4.66659 14.0007 4.66659C8.86732 4.66659 4.66732 8.86658 4.66732 13.9999C4.66732 18.7833 8.28398 22.6333 12.834 23.2166V22.1666C12.834 21.4666 13.3007 20.9999 14.0007 20.9999C14.7007 20.9999 15.1673 21.4666 15.1673 22.1666V24.4999C15.1673 25.1999 14.7007 25.6666 14.0007 25.6666ZM9.33398 18.6666C8.98398 18.6666 8.63398 18.5499 8.40065 18.1999C7.46732 16.9166 7.00065 15.5166 7.00065 13.9999C7.00065 12.4833 7.46732 10.9666 8.40065 9.79992C8.75065 9.33325 9.56732 9.21658 10.034 9.56658C10.5007 9.91658 10.6173 10.7333 10.2673 11.1999C9.68398 12.0166 9.33398 12.9499 9.33398 13.9999C9.33398 15.0499 9.68398 15.9833 10.2673 16.7999C10.6173 17.2666 10.5007 18.0833 10.034 18.4333C9.80065 18.5499 9.56732 18.6666 9.33398 18.6666ZM18.6673 18.6666C18.434 18.6666 18.2007 18.5499 17.9673 18.4333C17.5007 18.0833 17.384 17.2666 17.734 16.7999C18.3173 15.9833 18.6673 15.0499 18.6673 13.9999C18.6673 12.9499 18.3173 12.0166 17.734 11.1999C17.384 10.7333 17.5007 9.91658 17.9673 9.56658C18.434 9.21658 19.2506 9.33325 19.6006 9.79992C20.534 10.9666 21.0007 12.4833 21.0007 13.9999C21.0007 15.5166 20.534 17.0333 19.6006 18.1999C19.3673 18.4333 19.0173 18.6666 18.6673 18.6666Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="hover-content opacity-0 group-hover:opacity-100">
+                  <div
+                    class="button-menu-tooltip text-white bg-gray-700 p-3 absolute rounded-md text-sm right-[78px] top-[10px]"
+                  >
+                    <div class="whitespace-nowrap">ქოლ ცენტრი</div>
+                    <div
+                      class="button-menu-tooltip-arrow flex items-center absolute top-0 bottom-0 left-auto right-[-6px]"
+                    >
+                      <svg
+                        width="8"
+                        height="24"
+                        viewBox="0 0 8 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z"
+                          fill="#334155"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- mesame -->
+            <div class="w-auto h-auto">
+              <a href="#" class="flex items-center px-4 py-2 relative group">
+                <div
+                  class="icon-theme bg-white p-2.5 rounded-full hover:bg-cyan-500 hover:text-white"
+                >
+                  <div class="icon">
+                    <svg
+                      data-v-42e74cda=""
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        data-v-42e74cda=""
+                        d="M14 2.33334C9.49665 2.33334 5.83331 5.99668 5.83331 10.5C5.83331 17.115 11.9466 24.5117 12.2033 24.8267C12.6466 25.3633 13.3 25.6667 14 25.6667C14.6883 25.6667 15.3533 25.3517 15.7966 24.8267C16.0533 24.5117 22.1666 17.08 22.1666 10.5C22.1666 5.99668 18.5033 2.33334 14 2.33334ZM14 23.3333C14 23.3333 8.16665 16.345 8.16665 10.5C8.16665 7.28001 10.78 4.66668 14 4.66668C17.22 4.66668 19.8333 7.28001 19.8333 10.5C19.8333 16.31 14 23.3333 14 23.3333ZM14 7.00001C12.075 7.00001 10.5 8.57501 10.5 10.5C10.5 12.425 12.075 14 14 14C15.925 14 17.5 12.425 17.5 10.5C17.5 8.57501 15.925 7.00001 14 7.00001ZM14 11.6667C13.3583 11.6667 12.8333 11.1417 12.8333 10.5C12.8333 9.85834 13.3583 9.33334 14 9.33334C14.6416 9.33334 15.1666 9.85834 15.1666 10.5C15.1666 11.1417 14.6416 11.6667 14 11.6667Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="hover-content opacity-0 group-hover:opacity-100">
+                  <div
+                    class="button-menu-tooltip text-white bg-gray-700 p-3 absolute rounded-md text-sm right-[78px] top-[10px]"
+                  >
+                    <div>მისამართი</div>
+                    <div
+                      class="button-menu-tooltip-arrow flex items-center absolute top-0 bottom-0 left-auto right-[-6px]"
+                    >
+                      <svg
+                        width="8"
+                        height="24"
+                        viewBox="0 0 8 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6.87662 14.8284L1.12339 20.8284C0.404095 21.5786 7.66111e-07 22.596 8.12483e-07 23.6569L2.04844e-07 0.343145C2.51216e-07 1.40401 0.404094 2.42143 1.12339 3.17157L6.87661 9.17157C8.37446 10.7337 8.37446 13.2663 6.87662 14.8284Z"
+                          fill="#334155"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end in top -->
+    </div>
+  </body>
+</html>

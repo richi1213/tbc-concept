@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* FONT */
+
+@font-face {
+  font-family: "TBCX";
+  src: url("/src/styles/fonts/TBCX-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBCX";
+  src: url("/src/styles/fonts/TBCX-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TBCX";
+  src: url("/src/styles/fonts/TBCX-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-header {
+  display: none;
+}
+
+body.active .menu-header {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+/* LANGUAGE DROPDOWN */
+
+/* SLIDER */
+
+.slider-wrapper .card-list {
+  display: grid;
+  gap: 18px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.slider-scrollbar {
+  position: relative;
+}
+
+.slider-scrollbar .slide-button {
+  position: absolute;
+
+  bottom: 0;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  cursor: poiner;
+  transform: translateY(-50%);
+}
+
+.slider-scrollbar .slide-button.prev-slide {
+  right: -5%;
+  bottom: -25%;
+}
+
+.slider-scrollbar .slide-button.next-slide {
+  right: -8.5%;
+  bottom: -25%;
+}
+
+.slider-wrapper .card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-wrapper .card-list .card {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.slider-scrollbar {
+  height: 24px;
+  width: 92%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  height: 2px;
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  height: 100%;
+  width: 33%;
+  border-radius: interit;
+  cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
+}
+
+/* Prevent text selection */
+.slider-wrapper .card-list {
+  user-select: none;
+  /* For Safari */
+  -webkit-user-select: none;
+  /* For Firefox */
+  -moz-user-select: none;
+  /* For Internet Explorer/Edge */
+  -ms-user-select: none;
+}
+
+/* Prevent image dragging */
+.slider-wrapper .card-list img {
+  pointer-events: none;
+}
+
+/* Base styles for the card */
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for shadow */
+.card-hovered {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Shadow delay effect */
+.card-shadow-delay {
+  transition: box-shadow 0.3s ease-in-out 300ms;
+}
+
+.hover-image-effect:hover .relative > img {
+  transform: translateY(-2%);
+}
+
+/* DROPDWON ACCORDION */
+
+.dropdown-items {
+  transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+@media (max-width: 767px) {
+  .dropdown-items.show {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown-items {
+    height: auto;
+    opacity: 1;
+    overflow: visible;
+  }
+}
+
+.accordion-toggle .material-symbols-outlined {
+  transition: transform 0.4s ease-in-out;
+}
+
+.accordion-toggle.rotate .material-symbols-outlined {
+  transform: rotate(180deg);
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 8px;
+  width: 36px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+}
+
+.hamburger .bar-1,
+.hamburger .bar-2,
+.hamburger .bar-3 {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform-style: preserve-3d;
+  transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(0deg)
+    skew(0deg, 0deg);
+  border-radius: 1px;
+  transition: 0.6s;
+}
+
+.hamburger .bar-1 {
+  transform-origin: 100%;
+  width: 11px;
+}
+
+.hamburger .bar-2 {
+  width: 20px;
+}
+
+.hamburger .bar-3 {
+  transform-origin: 100%;
+  width: 15px;
+}
+
+.hamburger.active .bar-1 {
+  transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(-45deg)
+    skew(0deg, 0deg);
+  width: 20px;
+}
+
+.hamburger.active .bar-2 {
+  opacity: 0;
+}
+
+.hamburger.active .bar-3 {
+  transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(45deg)
+    skew(0deg, 0deg);
+  width: 20px;
+}
