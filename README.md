@@ -26,7 +26,7 @@ This project is a web application built using HTML, TailwindCSS, and JavaScript.
 4. Run the development server:
 
     ```bash
-    npm run build  # This might need to be replaced with the correct build command (see below)
+    npm run build  
     ```
 
     *Use code with caution.*
